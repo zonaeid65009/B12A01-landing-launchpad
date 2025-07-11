@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.navbar-banner-section {
+    background-image:url(images/Hero-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    width: 100%;
+    box-sizing:
+    border-box;
+
+}
+
+.logo a {
+    color: #6a5acd; 
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.signup-button {
+    background-color: #6a5acd; 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.signup-button:hover {
+    background-color: #5340aa;
+}
+
+/* Banner Styling */
+.banner {
+    flex-grow: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px; 
+}
+
+.banner-heading {
+    font-size: 48px;
+    color: #333; 
+    margin-bottom: 30px;
+    line-height: 1.2;
+}
+
+.stay-focused-button {
+    background-color: #6a5acd; 
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.stay-focused-button:hover {
+    background-color: #5340aa; 
+}
+
+max-width: 768px {
+    .navbar {
+        flex-direction: column;
+        padding: 15px 20px;
+    }
+
+    .nav-links {
+        margin-top: 15px;
+    }
+
+    .banner-heading {
+        font-size: 36px;
+    }
+
+    .signup-button,
+    .stay-focused-button {
+        padding: 12px 25px;
+        font-size: 14px;
+    }
+}
+
+max-width: 480px {
+    .banner-heading {
+        font-size: 28px;
+    }
+
+    .signup-button,
+    .stay-focused-button {
+        padding: 10px 20px;
+        font-size: 12px;
+    }

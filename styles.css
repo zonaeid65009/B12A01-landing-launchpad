@@ -392,3 +392,142 @@ form button:hover {
     width: 100%;
   }
 }
+
+/* users feedback */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f7ff;
+}
+
+.feedback-section {
+  padding: 60px 10%;
+  text-align: center;
+}
+
+.feedback-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 40px;
+  color: #1d1d1d;
+}
+
+.feedback-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.feedback-card {
+  background-color: white;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  width: 300px;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.feedback-card:hover {
+  transform: translateY(-5px);
+}
+
+.stars {
+  color: gold;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.feedback-card h3 {
+  font-size: 1.1rem;
+  color: #1d1d1d;
+  margin: 10px 0 8px;
+}
+
+.feedback-card p {
+  color: #555;
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+}
+
+.reviewer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.reviewer img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.reviewer-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.reviewer-info .name {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.reviewer-info .date {
+  font-size: 0.8rem;
+  color: gray;
+}
+
+@media (max-width: 768px) {
+  .feedback-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* footer section */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffff;
+  color: #333;
+}
+
+.center-header {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.logo {
+  font-size: 3.5rem;
+  color: #4f46e5;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #888;
+  max-width: 600px;
+  margin: 0 auto 30px;
+  line-height: 1.6;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  font-size: 1rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #666;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #4f46e5;
+}

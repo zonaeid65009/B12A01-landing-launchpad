@@ -5,11 +5,11 @@ body {
 }
 
 .navbar-banner-section {
-    background-image:url(images/Hero-bg.png);
+    background-image: url('Assets/Hero-bg.png'); /* Assuming image.png is in the same directory */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 100vh; /* Full viewport height for the section */
     display: flex;
     flex-direction: column;
 }
@@ -21,20 +21,18 @@ body {
     align-items: center;
     padding: 20px 50px;
     width: 100%;
-    box-sizing:
-    border-box;
-
+    box-sizing: border-box; /* Include padding in width */
 }
 
 .logo a {
-    color: #6a5acd; 
+    color: #6a5acd; /* Example logo color, adjust as needed */
     font-size: 28px;
     font-weight: bold;
     text-decoration: none;
 }
 
 .signup-button {
-    background-color: #6a5acd; 
+    background-color: #6a5acd; /* Example button color */
     color: white;
     padding: 10px 20px;
     border: none;
@@ -44,29 +42,29 @@ body {
 }
 
 .signup-button:hover {
-    background-color: #5340aa;
+    background-color: #5340aa; /* Darker shade on hover */
 }
 
 /* Banner Styling */
 .banner {
-    flex-grow: 1; 
+    flex-grow: 1; /* Allows the banner to take up remaining space */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 0 20px; 
+    padding: 0 20px; /* Add some horizontal padding for smaller screens */
 }
 
 .banner-heading {
     font-size: 48px;
-    color: #333; 
+    color: #333; /* Adjust color as needed for contrast against background */
     margin-bottom: 30px;
     line-height: 1.2;
 }
 
 .stay-focused-button {
-    background-color: #6a5acd; 
+    background-color: #6a5acd; /* Example button color */
     color: white;
     padding: 15px 30px;
     border: none;
@@ -77,10 +75,11 @@ body {
 }
 
 .stay-focused-button:hover {
-    background-color: #5340aa; 
+    background-color: #5340aa; /* Darker shade on hover */
 }
 
-max-width: 768px {
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
     .navbar {
         flex-direction: column;
         padding: 15px 20px;
@@ -101,7 +100,7 @@ max-width: 768px {
     }
 }
 
-max-width: 480px {
+@media (max-width: 480px) {
     .banner-heading {
         font-size: 28px;
     }
@@ -111,3 +110,285 @@ max-width: 480px {
         padding: 10px 20px;
         font-size: 12px;
     }
+}
+
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f7ff;
+  color: #1d1d1d;
+}
+
+.action-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 10%;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.action-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.action-text h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #1d1d1d;
+}
+
+.action-text p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 30px;
+  max-width: 400px;
+}
+
+.action-text button {
+  background-color: #4f46e5;
+  color: white;
+  padding: 14px 28px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.action-text button:hover {
+  background-color: #4338ca;
+}
+
+.action-image {
+  flex: 1;
+  min-width: 280px;
+  text-align: center;
+}
+
+.action-image img {
+  max-width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .action-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .action-text p {
+    margin: 0 auto 30px;
+  }
+}
+
+/* productive users */
+/* Productive Users Section (New Image Layout) */
+.productive-users-section-new {
+    background-color: #eef1f6; /* Light background color to separate the section */
+    padding: 80px 20px; /* Padding for the section */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px; /* Minimum height for visual spacing */
+}
+
+.productive-users-card {
+    background-color: #e0e5f0; /* Background color of the card/box */
+    border-radius: 15px; /* Rounded corners for the card */
+    padding: 60px 40px; /* Internal padding of the card */
+    text-align: center;
+    max-width: 900px; /* Max width of the card */
+    width: 100%; /* Ensure it takes full width up to max-width */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08); /* Subtle shadow for depth */
+}
+
+.productive-users-title-new {
+    font-size: 32px;
+    color: #333333;
+    margin-bottom: 50px; /* Space below the title */
+    font-weight: 600;
+}
+
+.user-stats-container {
+    display: flex;
+    justify-content: space-around; /* Distribute items evenly */
+    align-items: center;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    gap: 30px; /* Space between stat items */
+}
+
+.user-stat-item {
+    flex: 1; /* Allows items to take equal space */
+    min-width: 180px; /* Minimum width before wrapping */
+    text-align: center;
+}
+
+.user-stat-item .stat-number {
+    font-size: 60px;
+    color: #5b42d7; /* Distinct blue color for the numbers */
+    margin-bottom: 10px;
+    font-weight: 700;
+    line-height: 1; /* Tighter line height for numbers */
+}
+
+.user-stat-item .stat-description {
+    font-size: 18px;
+    color: #666666;
+    margin: 0;
+}
+
+/* Responsive adjustments for the new Productive Users Section */
+@media (max-width: 768px) {
+    .productive-users-section-new {
+        padding: 60px 15px;
+    }
+
+    .productive-users-card {
+        padding: 40px 25px;
+        border-radius: 10px;
+    }
+
+    .productive-users-title-new {
+        font-size: 26px;
+        margin-bottom: 40px;
+    }
+
+    .user-stats-container {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        gap: 25px;
+    }
+
+    .user-stat-item {
+        min-width: unset; /* Remove min-width when stacking */
+        width: 100%; /* Full width when stacked */
+    }
+
+    .user-stat-item .stat-number {
+        font-size: 48px;
+    }
+
+    .user-stat-item .stat-description {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .productive-users-card {
+        padding: 30px 15px;
+    }
+
+    .productive-users-title-new {
+        font-size: 22px;
+        margin-bottom: 30px;
+    }
+
+    .user-stat-item .stat-number {
+        font-size: 40px;
+    }
+
+    .user-stat-item .stat-description {
+        font-size: 15px;
+    }
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f7ff;
+}
+
+.contact-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 10%;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.contact-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.contact-text h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #111;
+}
+
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+  background-color: transparent;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+form input,
+form textarea {
+  padding: 14px 16px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 1rem;
+  background-color: white;
+  transition: border-color 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus {
+  outline: none;
+  border-color: #4f46e5;
+}
+
+form button {
+  background-color: #4f46e5;
+  color: white;
+  padding: 14px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background-color: #4338ca;
+}
+
+@media (max-width: 768px) {
+  .contact-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+
+  form {
+    align-items: center;
+  }
+
+  form input,
+  form textarea {
+    width: 100%;
+  }
+}

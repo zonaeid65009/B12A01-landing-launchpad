@@ -5,11 +5,11 @@ body {
 }
 
 .navbar-banner-section {
-    background-image: url('Assets/Hero-bg.png'); /* Assuming image.png is in the same directory */
+    background-image: url('Assets/Hero-bg.png'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh; /* Full viewport height for the section */
+    height: 100vh; 
     display: flex;
     flex-direction: column;
 }
@@ -21,18 +21,18 @@ body {
     align-items: center;
     padding: 20px 50px;
     width: 100%;
-    box-sizing: border-box; /* Include padding in width */
+    box-sizing: border-box; 
 }
 
 .logo a {
-    color: #6a5acd; /* Example logo color, adjust as needed */
+    color: #6a5acd;
     font-size: 28px;
     font-weight: bold;
     text-decoration: none;
 }
 
 .signup-button {
-    background-color: #6a5acd; /* Example button color */
+    background-color: #6a5acd; 
     color: white;
     padding: 10px 20px;
     border: none;
@@ -42,12 +42,12 @@ body {
 }
 
 .signup-button:hover {
-    background-color: #5340aa; /* Darker shade on hover */
+    background-color: #5340aa; 
 }
 
 /* Banner Styling */
 .banner {
-    flex-grow: 1; /* Allows the banner to take up remaining space */
+    flex-grow: 1; 
     display: flex;
     flex-direction: column;
     justify-content: center;

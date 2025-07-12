@@ -53,18 +53,18 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 0 20px; /* Add some horizontal padding for smaller screens */
+    padding: 0 20px; 
 }
 
 .banner-heading {
     font-size: 48px;
-    color: #333; /* Adjust color as needed for contrast against background */
+    color: #333; 
     margin-bottom: 30px;
     line-height: 1.2;
 }
 
 .stay-focused-button {
-    background-color: #6a5acd; /* Example button color */
+    background-color: #6a5acd; 
     color: white;
     padding: 15px 30px;
     border: none;
@@ -75,7 +75,7 @@ body {
 }
 
 .stay-focused-button:hover {
-    background-color: #5340aa; /* Darker shade on hover */
+    background-color: #5340aa; 
 }
 
 /* Responsive adjustments for smaller screens */
@@ -187,53 +187,52 @@ body {
 }
 
 /* productive users */
-/* Productive Users Section (New Image Layout) */
 .productive-users-section-new {
-    background-color: #eef1f6; /* Light background color to separate the section */
-    padding: 80px 20px; /* Padding for the section */
+    background-color: #eef1f6; 
+    padding: 80px 20px; 
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 400px; /* Minimum height for visual spacing */
+    min-height: 400px; 
 }
 
 .productive-users-card {
-    background-color: #e0e5f0; /* Background color of the card/box */
-    border-radius: 15px; /* Rounded corners for the card */
-    padding: 60px 40px; /* Internal padding of the card */
+    background-color: #e0e5f0; 
+    border-radius: 15px;
+    padding: 60px 40px; 
     text-align: center;
-    max-width: 900px; /* Max width of the card */
-    width: 100%; /* Ensure it takes full width up to max-width */
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08); /* Subtle shadow for depth */
+    max-width: 900px; 
+    width: 100%; 
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08); /
 }
 
 .productive-users-title-new {
     font-size: 32px;
     color: #333333;
-    margin-bottom: 50px; /* Space below the title */
+    margin-bottom: 50px; 
     font-weight: 600;
 }
 
 .user-stats-container {
     display: flex;
-    justify-content: space-around; /* Distribute items evenly */
+    justify-content: space-around; 
     align-items: center;
-    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
-    gap: 30px; /* Space between stat items */
+    flex-wrap: wrap; 
+    gap: 30px; 
 }
 
 .user-stat-item {
-    flex: 1; /* Allows items to take equal space */
-    min-width: 180px; /* Minimum width before wrapping */
+    flex: 1; 
+    min-width: 180px; 
     text-align: center;
 }
 
 .user-stat-item .stat-number {
     font-size: 60px;
-    color: #5b42d7; /* Distinct blue color for the numbers */
+    color: #5b42d7;
     margin-bottom: 10px;
     font-weight: 700;
-    line-height: 1; /* Tighter line height for numbers */
+    line-height: 1; 
 }
 
 .user-stat-item .stat-description {
@@ -259,13 +258,13 @@ body {
     }
 
     .user-stats-container {
-        flex-direction: column; /* Stack items vertically on smaller screens */
+        flex-direction: column; 
         gap: 25px;
     }
 
     .user-stat-item {
-        min-width: unset; /* Remove min-width when stacking */
-        width: 100%; /* Full width when stacked */
+        min-width: unset;
+        width: 100%;
     }
 
     .user-stat-item .stat-number {
